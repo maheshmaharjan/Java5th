@@ -22,13 +22,9 @@ public class ActionEventDemo07 {
         // Add ActionListener to handle button click
         button.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e) {
-                // Create a new ActionEvent using the constructor
-                // you can omit this part
-                ActionEvent actionEvent = new ActionEvent(e.getSource(), ActionEvent.ACTION_PERFORMED, "Button Clicked");
-               
+            public void actionPerformed(ActionEvent e) {   
                 // Update label when button is clicked
-                label.setText("Button clicked with command: " + actionEvent.getActionCommand());
+                label.setText("Button clicked");
             }
         });
 
